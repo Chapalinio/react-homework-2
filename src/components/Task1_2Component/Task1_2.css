@@ -1,0 +1,118 @@
+.bands-page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+.bands-title {
+    margin: 0 0 24px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.bands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+}
+
+.band-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.band-card:hover {
+    transform: translateY(-3px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.band-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #e2e8f0;
+}
+
+.band-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.band-card__name {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.band-card__year {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    white-space: nowrap;
+}
+
+.band-card__genre {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.band-card__description {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #475569;
+    flex-grow: 1;
+}
+
+.band-card__tracks-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.band-card__tracks-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #64748b;
+}
+
+.band-card__tracks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.band-card__track {
+    padding: 4px 9px;
+    border-radius: 7px;
+    font-size: 0.78rem;
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
